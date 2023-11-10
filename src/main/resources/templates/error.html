@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Error Page</title>
+</head>
+<body>
+    <div style="text-align: center; padding: 20px;">
+        <h1>Error</h1>
+        <p>Something went wrong. We apologize for the inconvenience.</p>
+       <p th:if="${#exception}" th:text="${#exception.message}"></p>
+		<p th:unless="${#exception}">An error occurred, but no specific error message is available.</p>
+
+    </div>
+</body>
+</html>

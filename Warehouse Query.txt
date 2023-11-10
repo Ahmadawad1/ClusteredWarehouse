@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS warehouse;
+
+USE warehouse_db;
+
+-- Create the deals table
+CREATE TABLE IF NOT EXISTS deals (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    deal_id VARCHAR(255) UNIQUE,
+    from_currency VARCHAR(255),
+    to_currency VARCHAR(255),
+    timestamp TIMESTAMP,
+    amount INT
+);
+
+-- Create Index on DealID Column
+CREATE INDEX idx_deal_id ON deals (deal_id);
