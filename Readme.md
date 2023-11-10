@@ -20,7 +20,7 @@ Utilizing repositories enables us to reuse data access logic across different pa
 * Clean and Structured Architecture
 Adopting the Repository pattern aligns with our goal of maintaining a clean and structured architecture for our application. It complements other design principles and patterns, such as the Single Responsibility Principle.
 
-### Logging - Singleton Design Pattern
+#### Logging - Singleton Design Pattern
 A Singleton logger provides a globally accessible point to log messages from any part of the application. Developers don't need to pass logger instances as parameters or create new instances for different parts of the code. This simplifies the logging process and makes it more convenient.
 
 
